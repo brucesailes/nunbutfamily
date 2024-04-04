@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { useCart } from '../context/CartContext'; // Make sure this import matches your file structure
 
 // Initialize Stripe with your publishable key. Make sure the key is in your environment variables
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!);
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY!);
 
 const CheckoutButton: React.FC = () => {
     const { cartItems } = useCart(); // Assuming useCart hook correctly fetches cart items
