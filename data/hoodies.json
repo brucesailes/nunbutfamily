@@ -1,0 +1,16 @@
+{
+  "hoodies": [
+    {
+      "id": 2,
+      "category": "Hoodie",
+      "name": "Hoodie NBF",
+      "description": "Comfortable and warm hoodie, perfect for any fan of NUN BUT FAMILY.",
+      "price": 40.00,
+      "imageUrls": ["/nbfhoodie.png"],
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+      "colors": ["Black", "White", "Red", "Navy Blue"]
+    }
+  ]
+}
+
+  

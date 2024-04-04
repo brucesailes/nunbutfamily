@@ -1,0 +1,17 @@
+{
+  "tshirts": [
+    {
+      "id": 1,
+      "category": "T-shirt",
+      "name": "T-shirt NBF",
+      "description": "High-quality cotton t-shirt with NUN BUT FAMILY logo. Available in multiple designs.",
+      "price": 25.00,
+      "imageUrls": ["/ManNBFTshirt.png", "/NBFTshirt.png"],
+      "sizes": ["S", "M", "L", "XL", "2XL", "3XL", "4XL"],
+      "colors": ["Black", "White", "Red", "Navy Blue"]
+    }
+  ]
+}
+
+
+  
