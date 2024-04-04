@@ -24,7 +24,7 @@ const CheckoutButton: React.FC = () => {
 
         try {
             // Create a checkout session
-            const response = await fetch('https://nunbutfamily.vercel.app/api/create-checkout-session', {
+            const response = await fetch('/api/create-checkout-session', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
