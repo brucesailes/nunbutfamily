@@ -5,7 +5,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { CartProvider } from '../context/CartContext'; // Adjust path as needed
 import '../style/globals.css';
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY || '');
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY as string);
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
