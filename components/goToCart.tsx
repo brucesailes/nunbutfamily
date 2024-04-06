@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function ToCart() {
   return (
-    <Link legacyBehavior href="/cart">
+    <Link legacyBehavior href="/Cart">
     <a className="hover:opacity-75 transition-opacity transition-transform transform hover:scale-105 fixed bottom-4 right-4">
           <Image
             src="/shopping-cart.png"

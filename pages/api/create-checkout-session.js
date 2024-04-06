@@ -22,7 +22,7 @@ function runMiddleware(req, res, fn) {
 export default async function handler(req, res) {
   // Run the middleware
   await runMiddleware(req, res, cors);
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '');
+  const stripe = new Stripe(process.env.STRIPE_API_KEY);
   const { items } = req.body; // Receive dynamic cart items from the request
 
   try {
@@ -48,8 +48,8 @@ export default async function handler(req, res) {
         quantity: item.quantity,
       })),
       mode: 'payment',
-      success_url: `https://nunbutfamily.vercel.app/success`,
-      cancel_url: `https://nunbutfamily.vercel.app/cancel`,
+      success_url: `https://nunbutfamily.vercel.app/Successful`,
+      cancel_url: `https://nunbutfamily.vercel.app/Cancellation`,
       billing_address_collection: 'required', // Collect billing address
       shipping_address_collection: {
         allowed_countries: ['US', 'CA'], // Limit shipping to specific countries

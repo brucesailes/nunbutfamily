@@ -52,7 +52,7 @@ const HomePage: React.FC = () => {
             <p className='text-base md:text-lg'>
               Book a session with Big Jacc and get the full experience of recording in a professional studio.
             </p>
-            <Link href="/booking-page" passHref>
+            <Link href="/Booking-page" passHref>
               <button 
                 type='button'
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">

@@ -3,9 +3,9 @@ import { loadStripe } from '@stripe/stripe-js';
 import { useCart } from '../context/CartContext'; // Make sure this import matches your file structure
 
 // Initialize Stripe with your publishable key. Make sure the key is in your environment variables
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY!);
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY || '');
 
-const CheckoutButton: React.FC = () => {
+const CheckoutButton: React.FC = () => { 
     const { cartItems } = useCart(); // Assuming useCart hook correctly fetches cart items
 
     const handleCheckout = async () => {
@@ -18,7 +18,6 @@ const CheckoutButton: React.FC = () => {
         // Calculate the total amount to check if it meets the minimum required amount
         const totalAmount = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
         if (totalAmount < 10) {
-            console.log("Total amount must be at least $10.00. Current total: $" + totalAmount);
             return; // Stop execution if totalAmount is less than the required minimum
         }
 

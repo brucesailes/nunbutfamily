@@ -6,12 +6,12 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="text-l text-center md:text-left mb-4 md:mb-0">
           <p>
-            COPYRIGHT © 2024 NUN BUT FAMILY - ALL RIGHTS RESERVED.
+            COPYRIGHT © 2024 NBF - ALL RIGHTS RESERVED.
           </p>
         </div>
         <div className="text-l text-center md:text-right">
           <p>
-            Designed By: Bruce Sailes
+            Developed By: <a href="https://www.brucesailes.com" target="_blank" rel="noopener" className='underline'>Bruce Sailes</a>
           </p>
         </div>
       </div>

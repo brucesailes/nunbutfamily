@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
-import { useCart } from '../context/CartContext';
-import CheckoutButton from '../components/stripebutton';
-import BackButton from '../components/back-button';
+import { useCart } from '../../context/CartContext';
+import CheckoutButton from '../../components/stripebutton';
+import BackButton from '../../components/back-button';
 
 const CartPage = () => {
   const { cartItems, addToCart, removeFromCart, decrementQuantity } = useCart();

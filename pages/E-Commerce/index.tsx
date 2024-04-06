@@ -1,6 +1,6 @@
 import React from 'react';
-import Hoodies from './components/hoodies';
-import Tshirts from './components/tshirts';
+import Hoodies from '../../components/hoodies';
+import Tshirts from '../../components/tshirts';
 
 export default function NBFamilyStore() {
   return (

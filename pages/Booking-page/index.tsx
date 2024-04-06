@@ -1,7 +1,7 @@
 import React from "react";
-import Basic from "../components/Basic";
-import Superstar from "../components/Superstar";
-import Elite from "../components/Elite";
+import Basic from "../../components/Basic";
+import Superstar from "../../components/Superstar";
+import Elite from "../../components/Elite";
 
 export default function BookingPage() {
   return (

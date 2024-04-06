@@ -25,7 +25,7 @@ export default function Navigation() {
             />
           </a>
         </Link>
-        <Link legacyBehavior href="/merchandise/Index" passHref>
+        <Link legacyBehavior href="/E-Commerce" passHref>
         <a className="hover:opacity-75 transition-opacity mb-4 md:mb-0 md:mr-4 transition-transform transform hover:scale-105">
             <Image
               src="/tshirt.png"
