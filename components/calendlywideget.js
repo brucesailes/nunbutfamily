@@ -1,12 +1,13 @@
-// components/CalendlyWidget.js
-
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react'; // Import useState here
 
 const CalendlyWidget = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
+    script.onload = () => setIsLoading(false); // Set loading to false when the script is loaded
     document.body.appendChild(script);
 
     return () => {
@@ -15,7 +16,10 @@ const CalendlyWidget = () => {
   }, []);
 
   return (
-    <div className="calendly-inline-widget" data-url="https://calendly.com/nbfamilyinc" style={{ minWidth: 320, height: 700 }}></div>
+    <div>
+      {isLoading && <p className="text-center text-white text-2xl">Loading...</p>} {/* Show this while loading */}
+      <div className={`calendly-inline-widget ${isLoading ? 'hidden' : ''}`} data-url="https://calendly.com/nbfamilyinc" style={{ minWidth: 320, height: 700 }}></div>
+    </div>
   );
 };
 
