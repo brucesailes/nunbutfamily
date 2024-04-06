@@ -1,47 +1,53 @@
-import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
 
-export default function Navigation() {
+export default function Navigations () {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsSticky(offset > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header className="text-center p-4 w-full z-50">
-      {/* Logo or Brand Name */}
-      <Link legacyBehavior href="/" passHref>
-        <a className="text-4xl md:text-5xl lg:text-6xl">
-          <h1 className='transition-transform hover:scale-105'>NUN BUT FAMILY</h1>
-        </a>
-      </Link>
-
-      {/* Navigation Icons */}
-      <nav className="flex justify-center items-center space-x-4 mt-4">
-        <Link legacyBehavior href="/" passHref>
-          <a className="hover:opacity-75 transition-opacity mb-4 md:mb-0 md:mr-4 transition-transform transform hover:scale-105">
-            <Image
-              src="/home.png"
-              alt="Home"
-              width={75}
-              height={75}
-              layout="intrinsic"
-            />
-          </a>
-        </Link>
-        <Link legacyBehavior href="/E-Commerce" passHref>
-        <a className="hover:opacity-75 transition-opacity mb-4 md:mb-0 md:mr-4 transition-transform transform hover:scale-105">
-            <Image
-              src="/tshirt.png"
-              alt="Merchandise"
-              width={75}
-              height={75}
-              layout="intrinsic"
-            />
-          </a>
-        </Link>
-      </nav>
-    </header>
+    <nav className={`p-4 ${isSticky ? 'fixed top-0 left-0 w-full bg-black shadow-md z-50' : 'bg-black'} text-white`}>
+      <div className="container mx-auto flex justify-center items-center flex-wrap">
+        {/* Navigation Links */}
+        <ul className="flex space-x-2 sm:space-x-4 md:text-lg lg:text-2xl">
+          <li>
+            <Link href="/" legacyBehavior>
+              <a className="hover:text-gray-500 transition-colors duration-300">Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Booking-page" legacyBehavior>
+              <a className="hover:text-gray-500 transition-colors duration-300">Booking</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/E-Commerce" legacyBehavior>
+              <a className="hover:text-gray-500 transition-colors duration-300">Shop</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Contact" legacyBehavior>
+              <a className="hover:text-gray-500 transition-colors duration-300">Contact</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/About" legacyBehavior>
+              <a className="hover:text-gray-500 transition-colors duration-300">Bio</a>
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 }
-
-
-
 
 

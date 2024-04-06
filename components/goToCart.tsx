@@ -11,7 +11,6 @@ export default function ToCart() {
             alt="Merchandise"
             width={75}
             height={75}
-            layout="intrinsic"
           />
       </a>
     </Link>
