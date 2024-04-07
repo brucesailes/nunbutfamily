@@ -1,12 +1,15 @@
 import React from "react";
-import CalendlyWidget from '../../components/calendlywideget';
+import Basic from '../../components/Basic';
+import Superstar from "@/components/Superstar";
+import Elite from "@/components/Elite";
 
 
 const BookingPage = () => {
   return (
     <div>
-      {/* <h1 className="text-center">Book Now</h1> */}
-      <CalendlyWidget />
+      <Basic />
+      <Superstar />
+      <Elite />
     </div>
   );
 };

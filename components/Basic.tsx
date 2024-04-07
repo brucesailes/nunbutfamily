@@ -7,7 +7,7 @@ export default function Basic() {
     // Function to handle the redirection
     const handleBookSession = () => {
       // Redirect the user to the Stripe payment link
-      window.location.href = 'https://buy.stripe.com/dR614k54SeqHbHW6oo';
+      window.location.href = 'https://calendly.com/nbfamilyinc/basic-package';
     };
   
     return (

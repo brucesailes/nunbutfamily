@@ -12,8 +12,8 @@ const HomePage: React.FC = () => {
           <Image
             src="/artist.png" // Placeholder image source
             alt="Placeholder"
-            layout="fill" // This will cover the div size, you might need to adjust objectFit based on your needs
-            objectFit="cover"
+            fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
+            style={{objectFit: "cover"}}
           />
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Big Jacc</h2>
@@ -33,8 +33,8 @@ const HomePage: React.FC = () => {
           <Image
             src="/studiotime.png" // Placeholder image source
             alt="Placeholder"
-            layout="fill" // This will cover the div size, you might need to adjust objectFit based on your needs
-            objectFit="cover"
+            fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
+            style={{objectFit: "cover"}}
           />
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Schedule Studio Time</h2>
@@ -52,10 +52,10 @@ const HomePage: React.FC = () => {
       <div className="text-center mb-8">
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
-            src="/NBFtshirt.png" // Placeholder image source
+            src="/nbftshirt.png" // Placeholder image source
             alt="Shop"
-            layout="fill" // This will cover the div size, you might need to adjust objectFit based on your needs
-            objectFit="cover"
+            fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
+            style={{objectFit: "cover"}}
           />
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Shop</h2>

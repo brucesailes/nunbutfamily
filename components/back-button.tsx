@@ -1,8 +1,8 @@
 import React from 'react';
-import { useRouter } from 'next/router'; // Import useRouter
+import { useRouter } from 'next/router'; 
 
 export default function BackButton() {
-  const router = useRouter(); // Initialize useRouter
+  const router = useRouter(); 
 
   // Function to handle click event
   const handleBack = () => {

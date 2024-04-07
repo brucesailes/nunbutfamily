@@ -110,7 +110,6 @@ export default function Tshirts() {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
-    // Add any other settings you need for the slider
   };
 
 
@@ -127,9 +126,8 @@ export default function Tshirts() {
                 <Image 
                   src={url} 
                   alt={`${tshirt.name} design ${index + 1}`} 
-                  layout="responsive" 
-                  width={500} // Adjust based on your layout needs
-                  height={500} // Adjust based on your layout needs
+                  width={500} 
+                  height={500} 
                 />
               </div>
             ))}
@@ -182,6 +180,8 @@ export default function Tshirts() {
             </span>
             <label htmlFor="quantity" className="block font-bold mt-2">Quantity:</label>
             <input
+              title="quantity"
+              placeholder="0"
               type="number"
               id={`quantity-${tshirt.id}`}
               className="mt-2 p-1 border rounded w-full text-black text-center"

@@ -7,7 +7,7 @@ export default function Superstar() {
     // Function to handle the redirection
     const handleBookSession = () => {
       // Redirect the user to the Stripe payment link
-      window.location.href = 'https://book.stripe.com/test_4gwdRO9ULanG1xueUW';
+      window.location.href = 'https://calendly.com/nbfamilyinc/superstar-package';
     };
   
     return (

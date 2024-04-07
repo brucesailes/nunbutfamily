@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useCart } from "../context/CartContext";
-import merchandiseData from '../data/hoodies.json'; // Ensure the path is correct
+import merchandiseData from '../data/hoodies.json'; 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -12,10 +12,10 @@ interface MerchItem {
   name: string;
   description: string;
   price: number;
-  imageUrls: string[]; // Assuming each item can have multiple images
+  imageUrls: string[]; 
   category: string;
-  sizes: string[]; // Available sizes for this item
-  colors: string[]; // Available colors for this item
+  sizes: string[]; 
+  colors: string[]; 
   selectedSize: string;
   selectedColor: string;
 }
@@ -23,7 +23,7 @@ interface MerchItem {
 
 export default function Hoodies() {
   const [hoodies, setHoodies] = useState<MerchItem[]>([]);
-  const { addToCart } = useCart(); // Correctly using `addToCart` from CartContext
+  const { addToCart } = useCart(); 
   const [selectedSizes, setSelectedSizes] = useState<{[key: number]: string}>({});
   const [selectedColors, setSelectedColors] = useState<{[key: number]: string}>({});
   const { updateQuantity } = useCart();
@@ -32,7 +32,6 @@ export default function Hoodies() {
 
   useEffect(() => {
     const fetchMerchandise = async () => {
-      // Extend each t-shirt object with selectedSize and selectedColor properties
       const extendedHoodies = merchandiseData.hoodies.filter(item => item.category === 'Hoodie').map(item => ({
         ...item,
         selectedSize: '',
@@ -125,7 +124,6 @@ export default function Hoodies() {
                 <Image 
                   src={url} 
                   alt={`${hoodie.name} design ${index + 1}`} 
-                  layout="responsive" 
                   width={500} // Adjust based on your layout needs
                   height={500} // Adjust based on your layout needs
                 />
@@ -180,6 +178,8 @@ export default function Hoodies() {
             </span>
             <label htmlFor="quantity" className="block font-bold mt-2">Quantity:</label>
             <input
+              title="quantity"
+              placeholder="0"
               type="number"
               id={`quantity-${hoodie.id}`}
               className="mt-2 p-1 border rounded w-full text-black text-center"
