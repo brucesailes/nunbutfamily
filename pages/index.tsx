@@ -12,6 +12,7 @@ const HomePage: React.FC = () => {
           <Image
             src="/artist.png" // Placeholder image source
             alt="Picture of Big Jacc"
+            priority={true}
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
           />
@@ -52,7 +53,7 @@ const HomePage: React.FC = () => {
       <div className="text-center mb-8">
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
-            src="/nbftshirt.png" 
+            src="/nbfTshirt.png" 
             alt="NBF Tshirt"
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
