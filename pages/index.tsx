@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
       <div className="text-center mb-8">
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
-            src="public/nbfTshirt.png" 
+            src="/public/nbfTshirt.png" 
             alt="NBF Tshirt"
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
