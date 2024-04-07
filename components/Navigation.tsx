@@ -35,8 +35,8 @@ export default function Navigations () {
             </Link>
           </li>
           <li>
-            <Link href="/Contact" legacyBehavior>
-              <a className="hover:text-gray-500 transition-colors duration-300">Contact</a>
+            <Link href="/Donation" legacyBehavior>
+              <a className='hover:text-gray-500 transition-colors duration-300'>Donations</a>
             </Link>
           </li>
           <li>
