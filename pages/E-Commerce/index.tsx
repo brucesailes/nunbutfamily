@@ -7,7 +7,7 @@ export default function NBFamilyStore() {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <div className="mb-12 relative overflow-hidden">
-        <div className="bg-cover bg-center h-64 text-white py-24 px-10 object-fill" style={{ backgroundImage: "url('/hero-background.jpg')" }}>
+        <div className="bg-cover bg-center h-64 text-white py-24 px-10 object-fill">
           <p className="text-4xl text-center font-bold mb-5">New Arrivals Are Here</p>
           <p className="text-xl text-center">Discover the latest collection of hoodies & t-shirts</p>
         </div>
