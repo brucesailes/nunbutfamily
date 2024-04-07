@@ -24,7 +24,7 @@ export default function Elite() {
             </ul>
           </div>
           <div className="px-5 pb-5">
-            <button onClick={handleBookSession} className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105">
+            <button type="button" onClick={handleBookSession} className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-transform transform hover:scale-105">
               Book Session
             </button>
           </div>
