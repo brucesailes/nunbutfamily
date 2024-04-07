@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
             src="/artist.png" // Placeholder image source
-            alt="Placeholder"
+            alt="Picture of Big Jacc"
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
           />
@@ -32,7 +32,7 @@ const HomePage: React.FC = () => {
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
             src="/studiotime.png" // Placeholder image source
-            alt="Placeholder"
+            alt="Studio Time"
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
           />
@@ -52,8 +52,8 @@ const HomePage: React.FC = () => {
       <div className="text-center mb-8">
         <div className="inline-block relative w-full h-64 mb-4">
           <Image
-            src="/nbftshirt.png" // Placeholder image source
-            alt="Shop"
+            src="/nbftshirt.png" 
+            alt="NBF Tshirt"
             fill={true} // This will cover the div size, you might need to adjust objectFit based on your needs
             style={{objectFit: "cover"}}
           />
