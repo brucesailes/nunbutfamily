@@ -1,10 +1,6 @@
 import React from "react";
-
-
-
-// pages/YourPage.js
-
 import CalendlyWidget from '../../components/calendlywideget';
+
 
 const BookingPage = () => {
   return (
