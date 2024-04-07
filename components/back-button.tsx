@@ -6,7 +6,7 @@ export default function BackButton() {
 
   // Function to handle click event
   const handleBack = () => {
-    router.push('/merchandise/Index'); // Use router.push to navigate
+    router.push('/E-Commerce'); // Use router.push to navigate
   };
 
   return (
