@@ -22,7 +22,7 @@ function runMiddleware(req, res, fn) {
 export default async function handler(req, res) {
   // Run the middleware
   await runMiddleware(req, res, cors);
-  const stripe = new Stripe(process.env.STRIPE_API_KEY);
+  const stripe = new Stripe(`${process.env.STRIPE_API_KEY || ''}`);
   const { items } = req.body; // Receive dynamic cart items from the request
 
   try {
