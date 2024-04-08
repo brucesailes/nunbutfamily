@@ -126,6 +126,7 @@ export default function Hoodies() {
                   alt={`${hoodie.name} design ${index + 1}`} 
                   width={500} // Adjust based on your layout needs
                   height={500} // Adjust based on your layout needs
+                  priority
                 />
               </div>
             ))}

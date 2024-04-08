@@ -128,6 +128,7 @@ export default function Tshirts() {
                   alt={`${tshirt.name} design ${index + 1}`} 
                   width={500} 
                   height={500} 
+                  priority
                 />
               </div>
             ))}
