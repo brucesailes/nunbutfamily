@@ -48,8 +48,8 @@ export default async function handler(req, res) {
         quantity: item.quantity,
       })),
       mode: 'payment',
-      success_url: `https://nunbutfamily.vercel.app/Successful`,
-      cancel_url: `https://nunbutfamily.vercel.app/Cancellation`,
+      success_url: `https://nunbutfamily.com/Successful`,
+      cancel_url: `https://nunbutfamily.com/Cancellation`,
       billing_address_collection: 'required', // Collect billing address
       shipping_address_collection: {
         allowed_countries: ['US', 'CA'], // Limit shipping to specific countries

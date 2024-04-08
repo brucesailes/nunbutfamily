@@ -34,11 +34,11 @@ export default function Navigations () {
               <a className="hover:text-gray-500 transition-colors duration-300">Shop</a>
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="/Donation" legacyBehavior>
               <a className='hover:text-gray-500 transition-colors duration-300'>Donations</a>
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link href="/Bio" legacyBehavior>
               <a className="hover:text-gray-500 transition-colors duration-300">Bio</a>

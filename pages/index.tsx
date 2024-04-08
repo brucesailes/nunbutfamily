@@ -7,8 +7,8 @@ const HomePage: React.FC = () => {
   return (
     <div className="container mx-auto mt-10 px-4">
       {/* Hero / About Section with Placeholder */}
-      <div className="text-center mb-8">
-        <div className="inline-block relative w-full h-64 mb-4">
+      <div className="text-center mb-8 transition-all duration-300 transform hover:scale-105">
+        <div className="inline-block relative w-full h-64 mb-4 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 rounded overflow-hidden">
           <Image
             src="/artist.png" // Placeholder image source
             alt="Picture of Big Jacc"
@@ -19,9 +19,9 @@ const HomePage: React.FC = () => {
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Big Jacc</h2>
         <p className="text-base md:text-lg mb-6">
-          I&apos;m Big Jacc, an artist and producer from Birmingham, Alabama. I create my own music as well as helping others by producing.
+          I&apos;m Big Jacc, an artist and producer from Calera, Alabama. I create my own music as well as helping others by producing.
         </p>
-        <Link href="/About" passHref legacyBehavior>
+        <Link href="/Bio" passHref legacyBehavior>
           <button type='button' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ease-in-out duration-150">
             Learn More
           </button>
@@ -29,8 +29,8 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Booking Section with Placeholder */}
-      <div className="text-center mb-8">
-        <div className="inline-block relative w-full h-64 mb-4">
+      <div className="text-center mb-8 transition-all duration-300 transform hover:scale-105">
+        <div className="inline-block relative w-full h-64 mb-4 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 rounded overflow-hidden">
           <Image
             src="/studiotime.png" // Placeholder image source
             alt="Studio Time"
@@ -50,8 +50,8 @@ const HomePage: React.FC = () => {
       </div>
 
       {/* Shop Section with Placeholder */}
-      <div className="text-center mb-8">
-        <div className="inline-block relative w-full h-64 mb-4">
+      <div className="text-center mb-8 transition-all duration-300 transform hover:scale-105">
+        <div className="inline-block relative w-full h-64 mb-4 shadow-lg hover:shadow-2xl transition-shadow border border-gray-200 rounded overflow-hidden">
           <Image
             src="/blacktshirt.png" 
             alt="NBF Tshirt"
