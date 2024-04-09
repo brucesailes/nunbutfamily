@@ -19,7 +19,7 @@ const HomePage: React.FC = () => {
         </div>
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Big Jacc</h2>
         <p className="text-base md:text-lg mb-6">
-          I&apos;m Big Jacc, an artist and producer from Calera, Alabama. I create my own music as well as helping others by producing.
+          I&apos;m Big Jacc, an artist and producer from Calera, Alabama. I create my own music as well as helping others succeed and flourish.
         </p>
         <Link href="/Bio" passHref legacyBehavior>
           <button type='button' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition ease-in-out duration-150">
