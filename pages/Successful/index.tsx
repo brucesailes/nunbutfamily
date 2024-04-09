@@ -30,7 +30,7 @@ export default function Success() {
         
         {/* Navigation Links */}
         <div className="mt-8">
-          <Link legacyBehavior href="/merchandise/Index">
+          <Link legacyBehavior href="/E-Commerce">
             <a className="text-center inline-block bg-blue-500 text-white px-6 py-3 rounded-lg mr-4 hover:bg-blue-600 transition-colors">
               Continue Shopping
             </a>
