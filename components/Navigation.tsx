@@ -35,6 +35,11 @@ export default function Navigations () {
             </Link>
           </li>
           <li>
+            <Link href="https://www.youtube.com/@bigjaccinc" legacyBehavior>
+              <a className='hover:text-gray-500 transition-colors duration-300' target='_blank' rel='noopener'>Beats</a>
+            </Link>
+          </li>
+          <li>
             <Link href="/Donation" legacyBehavior>
               <a className='hover:text-gray-500 transition-colors duration-300'>Donations</a>
             </Link>
