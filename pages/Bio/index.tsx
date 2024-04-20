@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <div className="text-center mt-10">
+        <div className="text-center mt-10 p-4">
             <h1 className="text-3xl font-bold mb-8">Bio</h1>
             <div className="inline-block text-left border border-gray-300 p-8 rounded-lg">
                 <Image src="/artist.png" alt="Big-Jacc" width={500} height={500} />

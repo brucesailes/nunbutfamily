@@ -1,21 +1,9 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+
 
 export default function Navigations () {
-  const [isSticky, setIsSticky] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      setIsSticky(offset > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
-    <nav className={`p-4 ${isSticky ? 'fixed top-0 left-0 w-full bg-black shadow-md z-50' : 'bg-black'} text-white`}>
+    <nav className="text-white py-4 sticky top-0 z-50 bg-black shadow">
       <div className="container mx-auto flex justify-center items-center flex-wrap">
         {/* Navigation Links */}
         <ul className="flex space-x-2 sm:space-x-4 md:text-lg lg:text-2xl">

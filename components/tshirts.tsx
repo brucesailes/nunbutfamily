@@ -5,6 +5,8 @@ import merchandiseData from '../data/tshirts.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import CheckoutButton from "./stripebutton";
+
 
 // Define TypeScript interface for merchandise items
 // Define TypeScript interface for merchandise items
@@ -176,6 +178,9 @@ export default function Tshirts() {
               onClick={() => handleAddToCart(tshirt, selectedSizes[tshirt.id], selectedColors[tshirt.id])}>
                 {addedToCart[`${tshirt.id}-${selectedSizes[tshirt.id]}-${selectedColors[tshirt.id]}`] ? "Added to Cart" : "Add to Cart"}
             </button>
+            <div className="mt-2">
+            <CheckoutButton />
+            </div> 
             <span className="block mt-2 text-center py-2 px-4 font-bold">
               In Cart: {getQuantityInCart(tshirt.id, selectedSizes[tshirt.id], selectedColors[tshirt.id])}
             </span>

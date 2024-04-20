@@ -5,6 +5,7 @@ import merchandiseData from '../data/hoodies.json';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import CheckoutButton from "./stripebutton";
 
 // Define TypeScript interface for merchandise items
 interface MerchItem {
@@ -174,6 +175,9 @@ export default function Hoodies() {
               onClick={() => handleAddToCart(hoodie, selectedSizes[hoodie.id], selectedColors[hoodie.id])}>
                 {addedToCart[`${hoodie.id}-${selectedSizes[hoodie.id]}-${selectedColors[hoodie.id]}`] ? "Added to Cart" : "Add to Cart"}
             </button>
+            <div className="mt-2">
+            <CheckoutButton />
+            </div> 
             <span className="block mt-2 text-center py-2 px-4 font-bold">
               In Cart: {getQuantityInCart(hoodie.id, selectedSizes[hoodie.id], selectedColors[hoodie.id])}
             </span>
@@ -188,7 +192,6 @@ export default function Hoodies() {
               onChange={(e) => handleQuantityChange(hoodie.id, e.target.value)}
               min="0"
             />
-            
           </div>
         ))}
       </div>
