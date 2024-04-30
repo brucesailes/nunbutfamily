@@ -4,7 +4,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import { CartProvider } from '../context/CartContext'; 
 import Layout from '../components/layout'; 
-import Analytics from '../components/analytics';
+import Analytics from '../components/Analytics';
 import '../style/globals.css';
 
 const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY as string);
